@@ -1,0 +1,351 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', 'sans-serif';
+    box-sizing: border-box;
+}
+
+/*--- Start of navbar ---*/
+
+.navbar{
+    background-color: #fff;
+    padding: 2% 6%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+.navbar .logo a{
+    margin-left: 3%;
+    font-size: x-large;
+    font-weight: bold;
+    color: #000;
+    text-decoration: none;
+}
+
+.navbar ul{
+    flex: 1;
+    text-align: right;
+}
+
+.navbar ul li{
+    list-style: none;
+    display: inline-block;
+    margin-left: 2%;
+    position: relative;
+}
+
+.navbar ul li a{
+    color: #000;
+    font-size: 14px;
+    text-decoration: none;
+}
+
+.navbar ul li::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: #fc03ec;
+    display: block;
+    margin: auto;
+    transition: 0.5s ease;
+}
+
+.navbar ul li:hover::after{
+    width: 100%;
+}
+
+.sub-menu{
+    display: none;
+}
+.navbar ul li:hover .sub-menu{
+    display: block;
+    position: absolute;
+    background: #fff;
+    margin-top: 10px;
+    margin-left: -15px;
+}
+
+.navbar ul li:hover .sub-menu ul{
+    display: block;
+    margin: 10px;
+}
+.navbar ul li:hover .sub-menu ul li{
+    width: 150px;
+    padding: 8px;
+    border-bottom: 1px solid #000;
+    background: transparent;
+    border-radius: 0;
+    text-align: left;
+}
+
+.navbar ul li:hover .sub-menu ul li:last-child{
+    border-bottom: none;
+}
+.navbar ul li:hover .sub-menu ul li a:hover{
+    color: blueviolet;
+}
+
+/*--- End of navbar ---*/
+
+/*--- Start of banner ---*/
+.banner-area{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(file:///C:/cabantuganJM/Projects/MyPersonalWebsite/images/443.jpg);
+    background-size: cover;
+}
+
+.container-area{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.banner-area .content{
+    text-align: center;
+}
+
+.banner-area .content h2{
+    font-size: 40px;
+    color: #fff;
+}
+
+.banner-area .content p{
+    font-size: 13px;
+    color: #fff;
+}
+/*--- End of Banner ----*/
+
+/*----Start of Articles ----*/
+
+.title{
+    width: fit-content;
+    color: #fc03ec;
+    margin: auto;
+    text-align: center;
+    padding: 14px 16px;
+    border: 2px solid #000;
+    margin-top: 50px;
+}
+.title:hover{
+    opacity: 0.7;
+    background-color: #000;
+    color: #fc03ec;
+}
+
+.articles .container{
+    display: flex;
+    justify-content: center;
+}
+
+.card{
+    background-color: #fff;
+    width: 270px;
+    margin: 20px;
+    margin-top: 60px;
+    margin-bottom: 100px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px 0 rgba(0,0,0,0.4);
+}
+
+.card:hover{
+    transform: scale(1.03);
+    transition: 0.6s ease;
+}
+
+.card-image{
+    background-color: #333;
+    height: 170px;
+    background-size: cover;
+    border-radius: 10px 10px 0 0;
+}
+
+.cats1{
+    background-image: url('file:///C:/cabantuganJM/Projects/MyPersonalWebsite/images/cat-01.jpg');
+}
+
+.cats2{
+    background-image: url('file:///C:/cabantuganJM/Projects/MyPersonalWebsite/images/cat-02.jpg');
+}
+
+.cats3{
+    background-image: url('file:///C:/cabantuganJM/Projects/MyPersonalWebsite/images/cat-03.jpg');
+}
+
+.cats4{
+    background-image: url('file:///C:/cabantuganJM/Projects/MyPersonalWebsite/images/cat-04.jpg');
+}
+
+.card h2{
+    padding: 10px;
+}
+
+.card h2::after{
+    content: '';
+    width: 0%;
+    background: #000;
+    height: 2px;
+    display: block;
+    transition: 1s;
+}
+
+.card h2:hover::after{
+    width: 100%;
+}
+
+.card p{
+    padding: 10px;
+    color: #777;
+}
+
+.card a{
+    background-color: #fff;
+    color: #2196f3;
+    display: block;
+    padding: 14px 16px;
+    text-decoration: none;
+    text-align: center;
+    border-radius: 0 0 10px 10px;
+    font-weight: bold;
+}
+
+.card a::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: #000;
+    display: block;
+    margin: auto;
+    transition: 0.5s ease;
+}
+
+.card a:hover::after{
+    width: 40%;
+}
+
+@media(max-width: 700px ) {
+    .articles .container{
+        padding-left: 90px;
+        flex-direction: column;
+    }
+}
+
+/*--- End of Articles ---*/
+
+/*--- Start of Gallery ---*/
+.card-gallery{
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(auto-fill, minmax(270px, 1fr));
+    margin: 0 30px;
+    margin-top: 100px;
+}
+
+.gallery-image{
+    border: 10px solid #fff;
+    box-shadow: 0 0 5px 0 rgba(0,0,0,0.4);
+}
+
+.gallery-image img{
+    width: 100%;
+    height: 100%;
+}
+
+.gallery-image:hover{
+    transform: scale(1.03) rotate(3deg);
+}
+/*--- End of Gallery ---*/
+
+/*--- Start of Footer ---*/
+.footer{
+    background-color: #000;
+    width: 100%;
+    margin: auto;
+    text-align: center;
+    padding-top: 70px;
+}
+
+.footer h1{
+    padding: 10px;
+    text-align: center;
+    color: #fff;
+}
+
+.footer p{
+    padding: 10px;
+    line-height: 22px;
+    color: #fff;
+}
+
+.social{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.social li{
+    list-style: none;
+}
+
+.footer .fa  {
+    background: #313131;
+    padding: 15px 18px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.fa-facebook{
+    color: #b9b9b9;
+}
+
+.fa-facebook:hover{
+    color: #fff;
+    background: #2196f3;
+}
+
+.fa-twitter{
+    color: #b9b9b9;
+}
+
+.fa-twitter:hover{
+    color: #fff;
+    background: #45bbff;
+}
+
+.fa-youtube{
+    color: #b9b9b9;
+}
+
+.fa-youtube:hover{
+    color: #fff;
+    background: red;
+}
+
+.copyright{
+    margin-top: 30px;
+    background-color: #000;
+}
+/*--- End of Footer ---*/
+
+@media(max-width: 760px) {
+    .banner-area .content h2{
+        font-size: 30px;
+    }
+    .banner-area .content p{
+        padding: 10px;
+    }
+    .footer h1{
+        font-size: 30px;
+    }
+    .footer p{
+        font-size: 13px;
+    }
+}
+

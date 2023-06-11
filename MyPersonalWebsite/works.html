@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Work Steps</title>
+    <style>
+        .work-steps{
+            padding-top: 100px;
+            padding-bottom: 100px;
+            background: #eee;
+        }
+        .work-steps .image{
+            max-width: 100%;
+            margin-right: 100px;
+        }
+        .work-steps .container{
+            display: flex;
+            align-items: center;
+            width: 90%;
+            margin: auto;
+        }
+        .work-steps .content .box{
+            display: flex;
+            align-items: center;
+            padding: 30px;
+            background: #f6f5f5;
+            margin-bottom: 20px;
+            border: 2px solid #fff;
+            border-radius: 6px;
+            position: relative;
+            z-index: 2;
+        }
+        .work-steps .content .box::before{
+            content: '';
+            position: absolute;
+            background: #eee;
+            transition: 0.6s;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 0;
+            height: 0;
+            z-index: -1;
+        }
+        .work-steps .content .box:hover::before{
+            width: 100%;
+            height: 100%;
+        }
+        .work-steps .content .box img{
+            width: 64px;
+            margin-right: 30px;
+        }
+        .work-steps .content .box .text h3{
+            font-size: 20px;
+            color: #000;
+            margin: 0 0 10px;
+        }
+        .work-steps .content .box .text p{
+            color: #777;
+            font-size: 18px;
+            line-height: 1.7;
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+<!-- Start of navbar -->
+<nav class="navbar">
+    <div class="logo"><a href="">JMC's&nbsp;&nbsp;<span class="team">WEB</span></a></div>
+    <ul>
+        <li><a href="homepage.html">HOME</a></li>
+        <li><a href="articles.html">ARTICLES</a></li>
+        <li><a href="personalevents.html">PERSONAL EVENTS</a></li>
+        <li><a href="#">OTHER LINKS</a>
+        <div class="sub-menu">
+            <ul>
+                <li><a href="entertainment.html">ENTERTAINMENT</a></li>
+                <li><a href="goals.html">GOALS</a></li>
+                <li><a href="teams.html">TEAMS</a></li>
+                <li><a href="testimonials.html">TESTIMONIALS</a></li>
+                <li><a href="works.html">WORKS</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="features.html">Features</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+         </li>
+    </ul>
+</nav>
+<!-- End of nav -->
+
+<!-- Start of banner -->
+<section class="banner-area">
+    <div class="container-area">
+        <div class="content">
+
+            <h2>Work Steps</h2>
+            
+        </div>
+    </div>
+</section>
+<!-- end of banner -->
+
+    <section class="work-steps">
+        <h2></h2>
+        <div class="container">
+            <img src="file:///C:/cabantuganJM/Projects/MyPersonalWebsite/images/work-steps.png" alt="img" class="image">
+            <div class="content">
+                <div class="box">
+                    <img src="file:///C:/cabantuganJM/Projects/MyPersonalWebsite/images/work-steps-1.png" alt="img">
+                    <div class="text">
+                        <h3>Bussiness Analysis</h3>
+                        <p>
+                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vel ratione corrupti aliquam excepturi praesentium neque culpa, minus suscipit quisquam perspiciatis.
+                        </p>
+                    </div>
+                </div>
+                <div class="box">
+                    <img src="file:///C:/cabantuganJM/Projects/MyPersonalWebsite/images/work-steps-2.png" alt="img">
+                    <div class="text">
+                        <h3>Architecture</h3>
+                        <p>
+                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vel ratione corrupti aliquam excepturi praesentium neque culpa, minus suscipit quisquam perspiciatis.
+                        </p>
+                    </div>
+                </div>
+                <div class="box">
+                    <img src="file:///C:/cabantuganJM/Projects/MyPersonalWebsite/images/work-steps-3.png" alt="img">
+                    <div class="text">
+                        <h3>Development</h3>
+                        <p>
+                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vel ratione corrupti aliquam excepturi praesentium neque culpa, minus suscipit quisquam perspiciatis.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>

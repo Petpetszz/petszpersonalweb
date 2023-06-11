@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>My Upcoming Events</title>
+    <style>
+        body{
+            background-color: #191919;
+        }
+
+        span{
+            color: #fc03ec;
+        }
+
+        .events{
+            width: 80%;
+            margin: auto;
+            text-align: center;
+            padding-top: 50px;
+        }
+
+        .events h2{
+            
+            color: #fff;
+        }
+
+        .events p{
+            color: #fcfc;
+            font-size: 15px;
+            font-weight: 300;
+            line-height: 22px;
+            padding: 10px;
+        }
+
+        .events-row{
+            margin-top: 5%;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .events h3{
+            color: #fff;
+        }
+
+        .events-col{
+            flex-basis: 31%;
+            background: #303030;
+            padding: 20px 12px;
+            border-radius: 10px;
+            margin: 10px auto 50px;
+            margin-bottom: 5%;
+        }
+
+        .events-col:hover{
+            box-shadow: 0 0 20px 0 rgba(233, 224, 224, 0.582);
+        }
+
+        @media(max-width: 700px) {
+            .events-row{
+                flex-direction: column;
+            }
+        }
+        
+    </style>
+</head>
+
+<body>
+    <!-- Start of navbar -->
+    <nav class="navbar">
+        <div class="logo"><a href="">JMC's&nbsp;&nbsp;<span class="team">WEB</span></a></div>
+        <ul>
+            <li><a href="homepage.html">HOME</a></li>
+            <li><a href="articles.html">ARTICLES</a></li>
+            <li><a href="personalevents.html">PERSONAL EVENTS</a></li>
+            <li><a href="#">OTHER LINKS</a>
+            <div class="sub-menu">
+                <ul>
+                    <li><a href="entertainment.html">ENTERTAINMENT</a></li>
+                    <li><a href="goals.html">GOALS</a></li>
+                    <li><a href="teams.html">TEAMS</a></li>
+                    <li><a href="testimonials.html">TESTIMONIALS</a></li>
+                    <li><a href="works.html">WORKS</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="features.html">Features</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+             </li>
+        </ul>
+    </nav>
+    <!-- End of nav -->
+
+    <!-- Start of banner -->
+    <section class="banner-area">
+        <div class="container-area">
+            <div class="content">
+
+                <h2>Upcoming Events</h2>
+
+            </div>
+        </div>
+    </section>
+    <!-- end of banner -->
+
+    <!-- Start of Events-->
+    <section class="events">
+        <h2>Personal <span>Events</span></h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum, libero!</p>
+
+        <div class="events-row">
+            <div class="events-col">
+                <h3>My Personal Events</h3>
+                <p>University of Cebu - Intramurals 2022 | December 19 - 21, 2022</p>
+                <p>University of Cebu - MLBB Tournament 2022 | December 19 - 21, 2022</p>
+                <p>University of Cebu - Chess Tournament 2022 | December 19 - 21, 2022</p>
+                <p>University of Cebu - Basketball(Shoot-Out) 2022 | December 19 - 21, 2022</p>
+                <p>University of Cebu - Christmas Party 2022 | December 23, 2022</p>
+            </div>
+            <div class="events-col">
+                <h3>Family Events</h3>
+                <p>Family Reunion | December 24, 2022</p>
+                <p>Family Cebu Day Tour | December 25, 2022</p>
+                <p>Family Movie Night | December 19 - 21, 2022</p>
+                <p>Birthday Celebration | January 28, 2023</p>
+                <p>Summer Vacations | February 3, 2023</p>
+            </div>
+            <div class="events-col">
+                <h3>Upcoming Big Events</h3>
+                <p>Sinulog Festival | January 15, 2023</p>
+                <p>Kadaugan sa Mactan | April 27, 2023</p>
+                <p>Palawod Festival | June 29, 2023</p>
+                <p>Karansa Festival | September 3, 2023</p>
+                <p>Siomai Festival | September 29, 2023</p>
+            </div>
+        </div>
+    </section>
+    <!-- End of Events-->
+
+     <!-- Start of footer-->
+     <div class="footer">
+        <h1>Feel Free to Contact me</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque, dolor quia. Laudantium odit porro reiciendis<br> consequuntur itaque excepturi, possimus fugiat?</p>
+        <ul class="social">
+            <li><a href="https://www.facebook.com/cabantuganj" target="_blank"><i class="fa fa-facebook "></i></a></li>
+            <li><i class="fa fa-twitter"></i></li>
+            <li><i class="fa fa-youtube"></i></li>
+        </ul>
+        <p class="copyright">&copy; Made by John Miguel Cabantugan All rights reserved. 2022</p>
+    </div>
+    <!-- End of footer-->
+</body>
+</html>

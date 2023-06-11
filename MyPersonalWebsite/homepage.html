@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Document</title>
+    <style>
+
+        /*-- Start of About --*/
+        body{
+            background-color: #24292e;
+        }
+
+        .about{
+            min-height: 700px;
+            overflow: hidden;
+        }
+        .about img{
+            width: 500px;
+            height: 500px;
+            float: left;
+            margin-right: 10px;
+            margin-top: 20px;
+            padding: 1% 6%;
+            padding-top: 50px;
+        }
+
+        .row{
+            padding: 3rem;
+            padding-top: 100px;
+        }
+
+
+        .row h2{
+            color: #fff;
+            font-size: 50px;
+            font-weight: bold;
+        }
+
+        span{
+            color: #fc03ec;
+        }
+
+        .row p{
+            line-height: 32px;
+            padding: 10px;
+            color: #fcfc;
+            margin-bottom: 35px;
+        }
+
+        .row h3{
+            color: #fff;
+            padding: 20px;
+        }
+
+        .row a{
+            text-decoration: none;
+            font-size: 13px;
+            font-weight: bold;
+            color: #fff;
+            padding: 12px 24px;
+            background-color: #fc03ec;
+            border-radius: 30px;
+            transition: 0.8s;
+        }
+
+        .row a:hover{
+            background: transparent;
+            border: 1px solid #fc03ec;
+        }
+        /*-- End of About --*/
+
+        /*-- Start of Games --*/
+        .games{
+            width: 100%;
+            background-color: #333;
+            margin-bottom: 30px;
+            margin: auto;
+            text-align: center;
+            padding-top: 100px;
+            padding-bottom:  20px;
+            overflow: hidden;
+        }
+
+        .game-col{
+            padding-top: 100px;
+        }
+
+        .games h2{
+            color: #fff;
+            text-align: center;
+            font-weight: 600;
+            margin: 10px 0;
+        }
+
+        .games p{
+            color: #fcfc;
+        }
+
+        .game-col img {
+            width: 400px;
+            margin-right: 20px;
+            margin-left: 20px;
+            height: 250px;
+            float: left;
+            border: 10px solid #000;
+        }
+
+        .game-col img:hover{
+            transform: scale(1.03) rotate(-3deg);
+            border: 2px solid salmon;
+        }
+
+        .game-col p{
+            padding: 0% 5%;
+            color: #777;
+            text-align: justify;
+            color: #fcfc;
+        }
+
+        /*-- End of games --*/
+
+        /*-- Start of music --*/
+        .music{
+            width: 100%;
+            background-color: #202020;
+            color: #fff;
+            margin: auto;
+            text-align: center;
+            padding-top: 100px;
+        }
+
+        .music p{
+            color: #fcfc;
+            font-size: 14px;
+            font-weight: 300;
+            line-height: 22px;
+            padding: 10px;
+            
+        }
+
+        .wrapper{
+            margin-top: 5%;
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+
+        .music-col{
+            flex-basis: 31%;
+            background: #303030;
+            border-radius: 10px;
+            padding: 20px 12px;
+            margin: 10px auto 10px;
+            text-align: justify;
+        }
+
+        .music-col:hover{
+            box-shadow: 0 0 20px 0 rgba(233, 224, 224, 0.582);
+        }
+
+        .music h3{
+            color: #fff;
+            text-align: center;
+            font-weight: 600;
+            margin: 10px 0;
+        }
+
+
+        @media(max-width: 700px) {
+            .wrapper, .music-col{
+                flex-direction: column;
+                padding: 20px;
+            }
+            .game-col img{
+                max-width: 90%;
+                margin-bottom: 10px;
+            }
+            .about h3{
+                position: relative;
+                right: 10px;
+            }
+            .about h2{
+                margin-left: 10px;
+            }
+            .about img{
+                max-width: 100%;
+                margin-left: 8px;
+                position: relative;
+                right: 8px;
+            }
+        }
+
+    </style>
+</head>
+    <body>
+        <!-- Start of navbar -->
+    <nav class="navbar">
+        <div class="logo"><a href="">JMC's&nbsp;&nbsp;<span class="team">WEB</span></a></div>
+        <ul>
+            <li><a href="homepage.html">HOME</a></li>
+            <li><a href="articles.html">ARTICLES</a></li>
+            <li><a href="personalevents.html">PERSONAL EVENTS</a></li>
+            <li><a href="#">OTHER LINKS</a>
+            <div class="sub-menu">
+                <ul>
+                    <li><a href="entertainment.html">ENTERTAINMENT</a></li>
+                    <li><a href="goals.html">GOALS</a></li>
+                    <li><a href="teams.html">TEAMS</a></li>
+                    <li><a href="testimonials.html">TESTIMONIALS</a></li>
+                    <li><a href="works.html">WORKS</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="features.html">Features</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+             </li>
+        </ul>
+    </nav>
+    <!-- End of nav -->
+    
+        <!-- Start of banner -->
+        <section class="banner-area">
+            <div class="container-area">
+                <div class="content">
+    
+                    <h2>Welcome</h2>
+                    <p>Here I am gonna share everything about my life. Books I am reading, Games I am Playing, Stories and Events</p>
+                </div>
+            </div>
+        </section>
+        <!-- end of banner -->
+
+    <!-- Start of About -->
+    <section class="about">
+        <img src="file:///C:/cabantuganJM/Projects/MyPersonalWebsite/images/pic-1.jpg" alt="sugal">
+        <div class="row">
+        <h2>About &nbsp;<span>Me</span></h2>
+        <h3>College First Year&nbsp;&nbsp;&&nbsp;&nbsp;<span>Web Developer</span></h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab facere cum tempore sed reprehenderit, praesentium optio ullam. Ea veniam quasi, cum eligendi magnam atque illum amet eius culpa fugit ipsam recusandae inventore architecto et repellat sit animi eveniet provident soluta asperiores ullam iusto. Rerum delectus sit voluptates, pariatur cum?</p>
+        <a href="">Let's TALK</a>
+        </div>
+    </section>
+    <!-- End of About-->
+
+    <!-- Start of Games -->
+    <section class="games">
+        <h2><span>Games</span> that I play</h2>
+        <p>Whenever I'm free i usually play games to free myself from being stress.</p>
+
+        <div class="wraper">
+            <div class="game-col">
+                <img src="file:///C:/cabantuganJM/Projects/MyPersonalWebsite/images/header.jpg" alt="dota">
+                <p><strong>Dota is a series of strategy video games by Valve.</strong> The series began in 2003 with the release of Defense of the Ancients (DotA), a fan-developed multiplayer online battle arena (MOBA) mod for the video game Warcraft III: Reign of Chaos and its expansion, The Frozen Throne. The original mod features gameplay centered around two teams of up to five players who assume control of individual characters called "heroes", which must coordinate to destroy the enemy's central base structure called an "Ancient", to win the game. Ownership and development of DotA were passed on multiple times since its initial release until Valve hired the mod's lead designer IceFrog and after an ongoing legal dispute with Blizzard Entertainment, the developer of Warcraft III, brokered a deal that allowed for Valve to inherit the trademark to the Dota name.</p>
+            </div>
+            <div class="game-col">
+                <img src="file:///C:/cabantuganJM/Projects/MyPersonalWebsite/images/EGS_RocketLeague_PsyonixLLC_S1_2560x1440-d247be4b168f0731d6d6b7c68ed84288.jpg" alt="dota">
+                <p><strong>Rocket League is a vehicular soccer video game developed and published by Psyonix.</strong> The game was first released for Windows and PlayStation 4 in July 2015, with ports for Xbox One and Nintendo Switch being released later on. In June 2016, 505 Games began distributing a physical retail version for PlayStation 4 and Xbox One, with Warner Bros. Interactive Entertainment taking over those duties by the end of 2017. Versions for macOS and Linux were also released in 2016, but support for their online services were dropped in 2020. The game went free-to-play in September 2020.
+
+                    Described as "soccer, but with rocket-powered cars", Rocket League has up to eight players assigned to each of the two teams, using rocket-powered vehicles to hit a ball into their opponent's goal and score points over the course of a match. The game includes single-player and multiplayer modes that can be played both locally and online, including cross-platform play between all versions.</p>
+            </div>
+            <div class="game-col">
+                <img src="file:///C:/cabantuganJM/Projects/MyPersonalWebsite/images/capsule_616x353.jpg" alt="dota">
+                <p><strong>Counter-Strike: Global Offensive (CS:GO) is a 2012 multiplayer tactical first-person shooter developed by Valve and Hidden Path Entertainment.</strong> It is the fourth game in the Counter-Strike series. Developed for over two years, Global Offensive was released for OS X, PlayStation 3, Windows, and Xbox 360 in August 2012, and for Linux in 2014. Valve still regularly updates the game, both with smaller balancing patches and larger content additions.
+
+                    The game pits two teams, Terrorists and Counter-Terrorists, against each other in different objective-based game modes. The most common game modes involve the Terrorists planting a bomb while Counter-Terrorists attempt to stop them, or Counter-Terrorists attempting to rescue hostages that the Terrorists have captured. There are nine official game modes, all of which have distinct characteristics specific to that mode. The game also has matchmaking support that allows players to play on dedicated Valve servers, in addition to community-hosted servers with custom maps and game modes. A battle-royale game-mode, "Danger Zone", was introduced in late 2018.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Start of Music-->
+    <section class="music">
+        <h2>Favorite <span>Singers</span></h2>
+        <p>When I'm bored, I listen to music to ease my mind.</p>
+
+        <div class="wrapper">
+            <div class="music-col">
+                <h3>Eminem</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem libero ea officiis praesentium rerum doloribus fugit et nostrum eius, quasi explicabo, voluptates minima quos quo.</p>
+            </div>
+            <div class="music-col">
+                <h3>Ed Sheeran</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem libero ea officiis praesentium rerum doloribus fugit et nostrum eius, quasi explicabo, voluptates minima quos quo.</p>
+            </div>
+            <div class="music-col">
+                <h3>Chris Martin</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem libero ea officiis praesentium rerum doloribus fugit et nostrum eius, quasi explicabo, voluptates minima quos quo.</p>
+            </div>
+            <div class="music-col">
+                <h3>Chris Martin</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem libero ea officiis praesentium rerum doloribus fugit et nostrum eius, quasi explicabo, voluptates minima quos quo.</p>
+            </div>
+            <div class="music-col">
+                <h3>Chris Martin</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem libero ea officiis praesentium rerum doloribus fugit et nostrum eius, quasi explicabo, voluptates minima quos quo.</p>
+            </div>
+            <div class="music-col">
+                <h3>Chris Martin</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem libero ea officiis praesentium rerum doloribus fugit et nostrum eius, quasi explicabo, voluptates minima quos quo.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Start of footer-->
+    <div class="footer">
+        <h1>Feel Free to Contact me</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque, dolor quia. Laudantium odit porro reiciendis<br> consequuntur itaque excepturi, possimus fugiat?</p>
+        <ul class="social">
+            <li><a href="https://www.facebook.com/cabantuganj" target="_blank"><i class="fa fa-facebook "></i></a></li>
+            <li><i class="fa fa-twitter"></i></li>
+            <li><i class="fa fa-youtube"></i></li>
+        </ul>
+        <p class="copyright">&copy; Made by John Miguel Cabantugan All rights reserved. 2022</p>
+    </div>
+    <!-- End of footer-->
+</body>
+</html>

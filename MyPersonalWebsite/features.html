@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Document</title>
+    <style>
+        span{
+            color: #fc03ec;
+        }
+        .features{
+            width: 100%;
+            margin: auto;
+            text-align: center;
+            padding-top: 80px;
+            background: #202020;
+        }
+
+        .features-title{
+            font-size: 40px;
+            color: #fc03ec;
+            margin-bottom: 50px;
+        }
+
+        .features .container{
+            display: flex;
+            justify-content: center;
+            margin-left: 30px;
+            margin-right: 30px;
+            flex-wrap: wrap;
+        }
+
+        @media(max-width: 991px) {
+            .features .container{
+                flex-direction: column;
+            }
+        }
+
+        .features-col{
+            flex-basis: 31%;
+            background-color: #303030;
+            padding: 30px 10px 30px;
+            margin: 20px;
+            border-radius: 6px;
+        }
+
+        .features-col:hover{
+            background: #000;
+            box-shadow: 0 0 20px 0 rgba(233, 224, 224, 0.582);
+        }
+
+        .features-col .fa{
+            color: #fc03ec;
+            margin: 0 0 20px;
+        }
+
+        .features-col h2{
+            color: #fff;
+            font-size: 22px;
+            text-align: center;
+        }
+
+        .features-col p{
+            color: #fcfc;
+            padding: 10px;
+            font-size: 18px;
+            line-height: 1.7;
+            text-align: justify;
+            margin: 0;
+        }
+
+        .features a{
+            color: #fff;
+            font-size: 14px;
+            font-weight: bold;
+            text-decoration: none;
+            display: block;
+            text-align: center;
+            background: #fc03ec;
+            padding: 12px 15px;
+            margin: 20px 120px 10px;
+            border-radius: 40px;
+            border: 1px solid #fc03ec;
+            transition: 0.6s;
+        }
+
+        .features a:hover{
+            background: transparent;
+        }
+
+    </style>
+</head>
+    <body>
+        <!-- Start of navbar -->
+    <nav class="navbar">
+        <div class="logo"><a href="">JMC's&nbsp;&nbsp;<span class="team">WEB</span></a></div>
+        <ul>
+            <li><a href="homepage.html">HOME</a></li>
+            <li><a href="articles.html">ARTICLES</a></li>
+            <li><a href="personalevents.html">PERSONAL EVENTS</a></li>
+            <li><a href="#">OTHER LINKS</a>
+            <div class="sub-menu">
+                <ul>
+                    <li><a href="entertainment.html">ENTERTAINMENT</a></li>
+                    <li><a href="goals.html">GOALS</a></li>
+                    <li><a href="teams.html">TEAMS</a></li>
+                    <li><a href="testimonials.html">TESTIMONIALS</a></li>
+                    <li><a href="works.html">WORKS</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="features.html">Features</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+             </li>
+        </ul>
+    </nav>
+    <!-- End of nav -->
+    
+        <!-- Start of banner -->
+        <section class="banner-area">
+            <div class="container-area">
+                <div class="content">
+    
+                    <h2>Welcome</h2>
+                    <p>Here I am gonna share everything about my life. Books I am reading, Games I am Playing, Stories and Events</p>
+                </div>
+            </div>
+        </section>
+        <!-- end of banner -->
+
+    <section class="features">
+        <h2 class="features-title">Features</h2>
+
+        <div class="container">
+            <div class="features-col">
+                <i class="fa fa-clock-o" style="font-size:88px;"></i>
+                <h2>Time</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat harum beatae perferendis nihil amet animi dolore hic ullam.</p>
+                <a href="#">Read More</a>
+            </div>
+            <div class="features-col">
+                <i class="fa fa-check" style="font-size:88px;"></i>
+                <h2>Quality</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat harum beatae perferendis nihil amet animi dolore hic ullam.</p>
+                <a href="#">Read More</a>
+            </div>
+            <div class="features-col">
+                <i class="fa fa-hand-spock-o" style="font-size:68px;"></i>
+                <h2>Passion</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat harum beatae perferendis nihil amet animi dolore hic ullam.</p>
+                <a href="#">Read More</a>
+            </div>
+            <div class="features-col">
+                <i class="fa fa-user-circle" style="font-size:68px;"></i>
+                <h2>User Friendly</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat harum beatae perferendis nihil amet animi dolore hic ullam.</p>
+                <a href="#">Read More</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Start of footer-->
+    <div class="footer">
+        <h1>Feel Free to Contact me</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque, dolor quia. Laudantium odit porro reiciendis<br> consequuntur itaque excepturi, possimus fugiat?</p>
+        <ul class="social">
+            <li><a href="https://www.facebook.com/cabantuganj" target="_blank"><i class="fa fa-facebook "></i></a></li>
+            <li><i class="fa fa-twitter"></i></li>
+            <li><i class="fa fa-youtube"></i></li>
+        </ul>
+        <p class="copyright">&copy; Made by John Miguel Cabantugan All rights reserved. 2022</p>
+    </div>
+    <!-- End of footer-->
+</body>
+</html>
